@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 80" width="280" height="80">
+  <defs>
+    <linearGradient id="df-ice" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E0F2FE"/>
+      <stop offset="50%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(12, 14)">
+    <!-- Diamond Crystal & Snowflake -->
+    <polygon points="26,6 46,24 26,46 6,24" fill="url(#df-ice)"/>
+    <path d="M26 6 L26 46 M6 24 L46 24" stroke="#FFFFFF" stroke-width="1.5" opacity="0.9"/>
+    <circle cx="26" cy="24" r="3" fill="#FFFFFF"/>
+  </g>
+  <text x="72" y="34" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="17" font-weight="800" fill="#FFFFFF" letter-spacing="1">DIAMOND FROZEN</text>
+  <text x="73" y="49" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="10.5" font-weight="700" fill="#38BDF8" letter-spacing="1.5">FOODS LLP</text>
+  <text x="73" y="62" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="8.5" font-weight="500" fill="#94A3B8">IQF GREEN PEAS & FROZEN VEGETABLES</text>
+</svg>

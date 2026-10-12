@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 80" width="280" height="80">
+  <defs>
+    <linearGradient id="cc-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#D97706"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(12, 16)">
+    <!-- Cheese Wedge with holes -->
+    <path d="M8 38 L42 38 L36 12 Z" fill="url(#cc-gold)"/>
+    <circle cx="22" cy="30" r="3.5" fill="#78350F" opacity="0.3"/>
+    <circle cx="32" cy="26" r="2.5" fill="#78350F" opacity="0.3"/>
+    <circle cx="24" cy="18" r="2" fill="#78350F" opacity="0.3"/>
+    <path d="M8 38 C8 42 42 42 42 38" fill="#B45309"/>
+  </g>
+  <text x="70" y="32" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="16" font-weight="800" fill="#FFFFFF" letter-spacing="0.8">CHOUDHERY CHEESE</text>
+  <text x="71" y="48" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="10.5" font-weight="700" fill="#F59E0B" letter-spacing="1">BAZAR PVT. LTD.</text>
+  <text x="71" y="61" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="8.5" font-weight="500" fill="#94A3B8">GOURMET MOZZARELLA & DAIRY</text>
+</svg>

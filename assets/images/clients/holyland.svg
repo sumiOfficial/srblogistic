@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 80" width="280" height="80">
+  <defs>
+    <linearGradient id="hl-gold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFD700"/>
+      <stop offset="100%" stop-color="#DAA520"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(10, 15)">
+    <!-- Crown / Crest Icon -->
+    <path d="M5 38 L15 12 L26 24 L37 8 L48 24 L59 12 L69 38 Z" fill="url(#hl-gold)"/>
+    <circle cx="15" cy="10" r="2.5" fill="#FFF"/>
+    <circle cx="37" cy="6" r="3" fill="#FFF"/>
+    <circle cx="59" cy="10" r="2.5" fill="#FFF"/>
+    <rect x="5" y="41" width="64" height="5" rx="2.5" fill="#DAA520"/>
+  </g>
+  <!-- Brand Text -->
+  <text x="90" y="36" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="20" font-weight="800" fill="#FFFFFF" letter-spacing="1.5">HOLYLAND</text>
+  <text x="90" y="52" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="10.5" font-weight="600" fill="#DAA520" letter-spacing="1">MARKETING PVT. LTD.</text>
+  <text x="90" y="64" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="8.5" font-weight="500" fill="#94A3B8">GOLDEN CROWN • MR. FREEZE</text>
+</svg>

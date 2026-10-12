@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pan-India Network | SRB Logistic - National Corridors & Cold Hubs</title>
+  <meta name="description" content="Explore SRB Logistic nationwide network spanning 650+ cities across India with strategic hubs in Narnaul, Delhi-NCR, Mumbai, and Bengaluru.">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            srbNavy: '#0b1528',
+            srbDark: '#060c18',
+            srbCard: '#0e1b33',
+            srbOrange: '#ff6a00',
+            srbOrangeHover: '#e65c00',
+            srbCyan: '#00d2ff',
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Space Grotesk"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-srbDark text-slate-100 antialiased selection:bg-srbOrange selection:text-white">
+
+  <!-- Top Notification & Quick Contact Bar -->
+  <header class="border-b border-white/10 bg-srbNavy/90 backdrop-blur-md sticky top-0 z-50 text-xs sm:text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
+      <div class="flex flex-wrap items-center justify-between gap-2">
+        <div class="flex items-center gap-4">
+          <span class="badge-live"><span class="pulse-dot"></span> 24/7 Operations Tower</span>
+          <span class="hidden md:inline-flex items-center gap-2 text-slate-300">
+            <i class="fa-solid fa-location-dot text-srbOrange"></i> HQ: Yaduvanshi Mode, Rewari Road, Narnaul, Haryana - 123001
+          </span>
+        </div>
+        <div class="flex items-center gap-4 sm:gap-6">
+          <a href="tel:8955917201" class="flex items-center gap-2 font-bold text-white hover:text-srbOrange transition-colors">
+            <i class="fa-solid fa-phone text-srbOrange animate-pulse"></i>
+            <span>+91 89559 17201</span>
+          </a>
+          <span class="hidden sm:inline text-white/20">|</span>
+          <a href="https://wa.me/918955917201?text=Hello%20SRB%20Logistic%20Team%2C%20I%20have%20an%20inquiry%20regarding%20freight%20services" target="_blank" class="hidden sm:flex items-center gap-1.5 text-green-400 hover:text-green-300 font-semibold transition-colors">
+            <i class="fa-brands fa-whatsapp text-base"></i> WhatsApp Desk
+          </a>
+          <a href="index.html#tracking" class="hidden lg:flex items-center gap-1.5 text-srbCyan hover:underline font-semibold">
+            <i class="fa-solid fa-satellite-dish"></i> Track Consignment
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <nav class="border-t border-white/5 bg-srbNavy/95 backdrop-blur-xl">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20 gap-2 lg:gap-4">
+          
+          <!-- Animated Brand Logo (Highlighted & Optimized Space) -->
+          <a href="index.html" class="flex items-center flex-shrink-0 group py-1">
+            <div class="bg-white px-3 py-1 rounded-xl shadow-lg shadow-black/40 border border-white/40 group-hover:border-srbOrange/70 transition-all flex items-center">
+              <img src="assets/images/srb-logo-animated.svg?v=20261012" alt="SRB Logistic Animated Logo" class="h-9 sm:h-10 w-auto object-contain transition-transform group-hover:scale-105">
+            </div>
+          </a>
+
+          <!-- Desktop Navigation Links (Optimized spacing - No overlap with Instant Quote) -->
+          <div class="hidden lg:flex items-center gap-3.5 xl:gap-5 text-[13px] xl:text-sm font-semibold tracking-normal whitespace-nowrap">
+            <a href="index.html" class="text-slate-300 hover:text-white transition-colors">Home</a>
+            <a href="about.html" class="text-slate-300 hover:text-white transition-colors">About</a>
+            <a href="services.html" class="text-slate-300 hover:text-white transition-colors">Services</a>
+            <a href="index.html#clients" class="text-slate-300 hover:text-white transition-colors">Clients</a>
+            <a href="fleet.html" class="text-slate-300 hover:text-white transition-colors">Fleet</a>
+            <a href="network.html" class="text-srbOrange hover:text-srbOrange transition-colors">Network</a>
+            <a href="index.html#calculator" class="text-slate-300 hover:text-white transition-colors">Calculator</a>
+            <a href="contact.html" class="text-slate-300 hover:text-white transition-colors">Contact</a>
+          </div>
+
+          <!-- Header Action Button (Protected spacing) -->
+          <div class="hidden lg:flex items-center flex-shrink-0 ml-2 xl:ml-4">
+            <a href="index.html#calculator" class="btn-tech-primary px-4 xl:px-5 py-2.5 rounded-xl text-xs xl:text-sm font-bold inline-flex items-center gap-2 whitespace-nowrap shadow-lg shadow-srbOrange/20">
+              <i class="fa-solid fa-calculator text-xs"></i>
+              <span>Instant Quote</span>
+            </a>
+          </div>
+
+          <!-- Mobile Hamburger Toggle -->
+          <div class="lg:hidden flex items-center">
+            <button onclick="toggleMobileMenu()" class="p-2 rounded-lg bg-white/5 border border-white/10 text-slate-200 hover:text-white focus:outline-none">
+              <i class="fa-solid fa-bars-staggered text-xl"></i>
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Mobile Dropdown Menu -->
+      <div id="mobile-menu" class="hidden lg:hidden border-t border-white/10 bg-srbNavy/98 px-4 pt-3 pb-6 space-y-3">
+        <a href="index.html" class="block py-2 text-slate-200 hover:text-white text-base">Home</a>
+        <a href="about.html" class="block py-2 text-slate-200 hover:text-white text-base">About Company</a>
+        <a href="services.html" class="block py-2 text-slate-200 hover:text-white text-base">Services & Cold Chain</a>
+        <a href="index.html#clients" class="block py-2 text-slate-200 hover:text-white text-base">Our Clients</a>
+        <a href="fleet.html" class="block py-2 text-slate-200 hover:text-white text-base">Fleet & IoT Technology</a>
+        <a href="network.html" class="block py-2 text-srbOrange font-bold text-base">Pan-India Network</a>
+        <a href="index.html#calculator" class="block py-2 text-slate-200 hover:text-white text-base">Rate Calculator</a>
+        <a href="contact.html" class="block py-2 text-slate-200 hover:text-white text-base">Contact HQ (Narnaul)</a>
+        <div class="pt-2 flex flex-col gap-2">
+          <a href="tel:8955917201" class="btn-tech-primary py-3 rounded-xl text-center font-bold flex items-center justify-center gap-2">
+            <i class="fa-solid fa-phone"></i> Call 8955917201
+          </a>
+          <a href="https://wa.me/918955917201" target="_blank" class="bg-green-600 hover:bg-green-700 text-white py-3 rounded-xl text-center font-bold flex items-center justify-center gap-2">
+            <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Header -->
+  <section class="py-20 bg-tech-grid bg-radial-glow relative border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <span class="text-srbOrange font-bold text-xs uppercase tracking-widest bg-srbOrange/10 px-3 py-1 rounded-full border border-srbOrange/20">Nationwide Infrastructure</span>
+        <h1 class="text-4xl sm:text-5xl font-extrabold font-display mt-4">
+          Pan-India Freight Grid & <br>
+          <span class="gradient-text-orange">High-Speed Cold Corridors</span>
+        </h1>
+        <p class="text-slate-300 text-base sm:text-lg mt-4 leading-relaxed">
+          Operating from our central command post in <strong>Narnaul, Haryana</strong>, SRB Logistic links northern agricultural and manufacturing hubs to major metropolitan ports, consumption centers, and pharmaceutical zones.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Corridors Breakdown -->
+  <section class="py-20 bg-srbNavy/20 border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="glass-panel p-6 rounded-2xl border border-white/10 flex flex-col justify-between">
+          <div>
+            <div class="text-srbOrange text-2xl mb-3"><i class="fa-solid fa-compass"></i></div>
+            <h3 class="text-lg font-bold text-white mb-2">Western Arterial Line</h3>
+            <p class="text-xs text-slate-400 mb-4">Daily dedicated reefers on the DMIC route connecting Haryana to port gateways.</p>
+            <div class="text-xs text-slate-300 space-y-1 font-mono">
+              <div>• Narnaul ➔ Jaipur (3.5h)</div>
+              <div>• Narnaul ➔ Ahmedabad (18h)</div>
+              <div>• Narnaul ➔ Mumbai JNPT (28h)</div>
+              <div>• Narnaul ➔ Pune (32h)</div>
+            </div>
+          </div>
+          <div class="mt-6 pt-4 border-t border-white/10 text-[11px] text-green-400 font-semibold">
+            <i class="fa-solid fa-bolt mr-1"></i> 24h Green Corridor Ready
+          </div>
+        </div>
+
+        <div class="glass-panel p-6 rounded-2xl border border-white/10 flex flex-col justify-between">
+          <div>
+            <div class="text-srbCyan text-2xl mb-3"><i class="fa-solid fa-road"></i></div>
+            <h3 class="text-lg font-bold text-white mb-2">Northern Food Basket</h3>
+            <p class="text-xs text-slate-400 mb-4">Connecting dairy, fruit orchards, and grain mandis to consumption belts.</p>
+            <div class="text-xs text-slate-300 space-y-1 font-mono">
+              <div>• Narnaul ➔ Delhi-NCR (3.5h)</div>
+              <div>• Narnaul ➔ Chandigarh (6h)</div>
+              <div>• Narnaul ➔ Ludhiana (7.5h)</div>
+              <div>• Narnaul ➔ Jammu (14h)</div>
+            </div>
+          </div>
+          <div class="mt-6 pt-4 border-t border-white/10 text-[11px] text-cyan-400 font-semibold">
+            <i class="fa-solid fa-bolt mr-1"></i> Trans-Haryana Expressway
+          </div>
+        </div>
+
+        <div class="glass-panel p-6 rounded-2xl border border-white/10 flex flex-col justify-between">
+          <div>
+            <div class="text-green-400 text-2xl mb-3"><i class="fa-solid fa-dna"></i></div>
+            <h3 class="text-lg font-bold text-white mb-2">Southern Bio-Corridor</h3>
+            <p class="text-xs text-slate-400 mb-4">GDP-compliant line serving biotech, healthcare, and electronics clusters.</p>
+            <div class="text-xs text-slate-300 space-y-1 font-mono">
+              <div>• Narnaul ➔ Hyderabad (32h)</div>
+              <div>• Narnaul ➔ Bengaluru (42h)</div>
+              <div>• Narnaul ➔ Chennai (46h)</div>
+              <div>• Narnaul ➔ Kochi (56h)</div>
+            </div>
+          </div>
+          <div class="mt-6 pt-4 border-t border-white/10 text-[11px] text-green-400 font-semibold">
+            <i class="fa-solid fa-bolt mr-1"></i> Dual-Driver Express
+          </div>
+        </div>
+
+        <div class="glass-panel p-6 rounded-2xl border border-white/10 flex flex-col justify-between">
+          <div>
+            <div class="text-amber-400 text-2xl mb-3"><i class="fa-solid fa-boxes-packing"></i></div>
+            <h3 class="text-lg font-bold text-white mb-2">Eastern Trade Line</h3>
+            <p class="text-xs text-slate-400 mb-4">Servicing FMCG and industrial distribution across the Gangetic belt.</p>
+            <div class="text-xs text-slate-300 space-y-1 font-mono">
+              <div>• Narnaul ➔ Agra/Lucknow (8h)</div>
+              <div>• Narnaul ➔ Varanasi (16h)</div>
+              <div>• Narnaul ➔ Patna (22h)</div>
+              <div>• Narnaul ➔ Kolkata (34h)</div>
+            </div>
+          </div>
+          <div class="mt-6 pt-4 border-t border-white/10 text-[11px] text-amber-400 font-semibold">
+            <i class="fa-solid fa-bolt mr-1"></i> Dedicated FTL & Reefer
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Complete Indian Cities Transit Matrix Table -->
+  <section class="py-20 bg-tech-grid">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <h2 class="text-3xl font-extrabold font-display text-white">Consignment Transit Time Matrix</h2>
+        <p class="text-slate-400 text-sm mt-2">Indicative transit schedules from SRB Central Hub (Narnaul / Delhi-NCR) to primary freight destinations.</p>
+      </div>
+
+      <div class="glass-panel rounded-2xl border border-white/15 overflow-hidden shadow-2xl">
+        <div class="overflow-x-auto">
+          <table class="w-full text-left text-xs sm:text-sm">
+            <thead class="bg-srbDark/90 border-b border-white/10 uppercase tracking-wider text-slate-400 font-bold">
+              <tr>
+                <th class="p-4">Destination Destination</th>
+                <th class="p-4">State</th>
+                <th class="p-4">Highway Route</th>
+                <th class="p-4">Est. Distance</th>
+                <th class="p-4">Transit Time</th>
+                <th class="p-4">Reefer Temp Availability</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-white/10">
+              <tr class="hover:bg-white/5 transition-colors">
+                <td class="p-4 font-bold text-white">Mumbai (JNPT / Bhiwandi)</td>
+                <td class="p-4 text-slate-300">Maharashtra</td>
+                <td class="p-4 text-slate-400">Delhi-Mumbai Expy / NH-48</td>
+                <td class="p-4 font-mono text-srbCyan">1,280 km</td>
+                <td class="p-4 font-bold text-green-400">28 - 32 Hours</td>
+                <td class="p-4 text-cyan-300">-25°C to +20°C</td>
+              </tr>
+              <tr class="hover:bg-white/5 transition-colors">
+                <td class="p-4 font-bold text-white">Ahmedabad / Sanand</td>
+                <td class="p-4 text-slate-300">Gujarat</td>
+                <td class="p-4 text-slate-400">NE-1 / NH-48</td>
+                <td class="p-4 font-mono text-srbCyan">840 km</td>
+                <td class="p-4 font-bold text-green-400">18 - 20 Hours</td>
+                <td class="p-4 text-cyan-300">-25°C to +20°C</td>
+              </tr>
+              <tr class="hover:bg-white/5 transition-colors">
+                <td class="p-4 font-bold text-white">Bengaluru (Electronic City)</td>
+                <td class="p-4 text-slate-300">Karnataka</td>
+                <td class="p-4 text-slate-400">NH-44 Corridor</td>
+                <td class="p-4 font-mono text-srbCyan">1,980 km</td>
+                <td class="p-4 font-bold text-amber-400">42 - 46 Hours</td>
+                <td class="p-4 text-cyan-300">-20°C to +25°C</td>
+              </tr>
+              <tr class="hover:bg-white/5 transition-colors">
+                <td class="p-4 font-bold text-white">Pune (Chakan Auto Hub)</td>
+                <td class="p-4 text-slate-300">Maharashtra</td>
+                <td class="p-4 text-slate-400">NH-48 via Mumbai bypass</td>
+                <td class="p-4 font-mono text-srbCyan">1,360 km</td>
+                <td class="p-4 font-bold text-green-400">30 - 34 Hours</td>
+                <td class="p-4 text-cyan-300">-25°C to +20°C</td>
+              </tr>
+              <tr class="hover:bg-white/5 transition-colors">
+                <td class="p-4 font-bold text-white">Hyderabad (Genome Valley)</td>
+                <td class="p-4 text-slate-300">Telangana</td>
+                <td class="p-4 text-slate-400">NH-44 North-South Line</td>
+                <td class="p-4 font-mono text-srbCyan">1,490 km</td>
+                <td class="p-4 font-bold text-green-400">32 - 36 Hours</td>
+                <td class="p-4 text-cyan-300">GDP Certified (+2°C to +8°C)</td>
+              </tr>
+              <tr class="hover:bg-white/5 transition-colors">
+                <td class="p-4 font-bold text-white">Kolkata (Dankuni Logistic)</td>
+                <td class="p-4 text-slate-300">West Bengal</td>
+                <td class="p-4 text-slate-400">NH-19 (Grand Trunk)</td>
+                <td class="p-4 font-mono text-srbCyan">1,550 km</td>
+                <td class="p-4 font-bold text-amber-400">34 - 38 Hours</td>
+                <td class="p-4 text-cyan-300">-18°C to +20°C</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="text-center mt-12">
+        <a href="index.html#calculator" class="btn-tech-primary px-8 py-4 rounded-xl font-bold text-sm inline-flex items-center gap-2">
+          <i class="fa-solid fa-calculator"></i> Calculate Custom Corridor Pricing
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-srbDark border-t border-white/10 py-12 text-slate-400 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        © 2026 SRB Logistic. All rights reserved. Yaduvanshi Mode, Rewari Road, Narnaul, Haryana - 123001.
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="tel:8955917201" class="text-srbOrange font-bold hover:underline">Phone: 8955917201</a>
+        <span>•</span>
+        <a href="index.html" class="hover:text-white">Home</a>
+        <span>•</span>
+        <a href="contact.html" class="hover:text-white">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fleet & Technology | SRB Logistic - Smart Reefer Vehicles & IoT Telematics</title>
+  <meta name="description" content="Explore SRB Logistic high-tech commercial vehicle fleet. Equipped with BharatBenz, Volvo, Carrier Supra, and real-time IoT thermal sensors.">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            srbNavy: '#0b1528',
+            srbDark: '#060c18',
+            srbCard: '#0e1b33',
+            srbOrange: '#ff6a00',
+            srbOrangeHover: '#e65c00',
+            srbCyan: '#00d2ff',
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            display: ['"Space Grotesk"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-srbDark text-slate-100 antialiased selection:bg-srbOrange selection:text-white">
+
+  <!-- Top Notification & Quick Contact Bar -->
+  <header class="border-b border-white/10 bg-srbNavy/90 backdrop-blur-md sticky top-0 z-50 text-xs sm:text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2">
+      <div class="flex flex-wrap items-center justify-between gap-2">
+        <div class="flex items-center gap-4">
+          <span class="badge-live"><span class="pulse-dot"></span> 24/7 Operations Tower</span>
+          <span class="hidden md:inline-flex items-center gap-2 text-slate-300">
+            <i class="fa-solid fa-location-dot text-srbOrange"></i> HQ: Yaduvanshi Mode, Rewari Road, Narnaul, Haryana - 123001
+          </span>
+        </div>
+        <div class="flex items-center gap-4 sm:gap-6">
+          <a href="tel:8955917201" class="flex items-center gap-2 font-bold text-white hover:text-srbOrange transition-colors">
+            <i class="fa-solid fa-phone text-srbOrange animate-pulse"></i>
+            <span>+91 89559 17201</span>
+          </a>
+          <span class="hidden sm:inline text-white/20">|</span>
+          <a href="https://wa.me/918955917201?text=Hello%20SRB%20Logistic%20Team%2C%20I%20have%20an%20inquiry%20regarding%20freight%20services" target="_blank" class="hidden sm:flex items-center gap-1.5 text-green-400 hover:text-green-300 font-semibold transition-colors">
+            <i class="fa-brands fa-whatsapp text-base"></i> WhatsApp Desk
+          </a>
+          <a href="index.html#tracking" class="hidden lg:flex items-center gap-1.5 text-srbCyan hover:underline font-semibold">
+            <i class="fa-solid fa-satellite-dish"></i> Track Consignment
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Navigation Bar -->
+    <nav class="border-t border-white/5 bg-srbNavy/95 backdrop-blur-xl">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between h-20 gap-2 lg:gap-4">
+          
+          <!-- Animated Brand Logo (Highlighted & Optimized Space) -->
+          <a href="index.html" class="flex items-center flex-shrink-0 group py-1">
+            <div class="bg-white px-3 py-1 rounded-xl shadow-lg shadow-black/40 border border-white/40 group-hover:border-srbOrange/70 transition-all flex items-center">
+              <img src="assets/images/srb-logo-animated.svg?v=20261012" alt="SRB Logistic Animated Logo" class="h-9 sm:h-10 w-auto object-contain transition-transform group-hover:scale-105">
+            </div>
+          </a>
+
+          <!-- Desktop Navigation Links (Optimized spacing - No overlap with Instant Quote) -->
+          <div class="hidden lg:flex items-center gap-3.5 xl:gap-5 text-[13px] xl:text-sm font-semibold tracking-normal whitespace-nowrap">
+            <a href="index.html" class="text-slate-300 hover:text-white transition-colors">Home</a>
+            <a href="about.html" class="text-slate-300 hover:text-white transition-colors">About</a>
+            <a href="services.html" class="text-slate-300 hover:text-white transition-colors">Services</a>
+            <a href="index.html#clients" class="text-slate-300 hover:text-white transition-colors">Clients</a>
+            <a href="fleet.html" class="text-srbOrange hover:text-srbOrange transition-colors">Fleet</a>
+            <a href="network.html" class="text-slate-300 hover:text-white transition-colors">Network</a>
+            <a href="index.html#calculator" class="text-slate-300 hover:text-white transition-colors">Calculator</a>
+            <a href="contact.html" class="text-slate-300 hover:text-white transition-colors">Contact</a>
+          </div>
+
+          <!-- Header Action Button (Protected spacing) -->
+          <div class="hidden lg:flex items-center flex-shrink-0 ml-2 xl:ml-4">
+            <a href="index.html#calculator" class="btn-tech-primary px-4 xl:px-5 py-2.5 rounded-xl text-xs xl:text-sm font-bold inline-flex items-center gap-2 whitespace-nowrap shadow-lg shadow-srbOrange/20">
+              <i class="fa-solid fa-calculator text-xs"></i>
+              <span>Instant Quote</span>
+            </a>
+          </div>
+
+          <!-- Mobile Hamburger Toggle -->
+          <div class="lg:hidden flex items-center">
+            <button onclick="toggleMobileMenu()" class="p-2 rounded-lg bg-white/5 border border-white/10 text-slate-200 hover:text-white focus:outline-none">
+              <i class="fa-solid fa-bars-staggered text-xl"></i>
+            </button>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Mobile Dropdown Menu -->
+      <div id="mobile-menu" class="hidden lg:hidden border-t border-white/10 bg-srbNavy/98 px-4 pt-3 pb-6 space-y-3">
+        <a href="index.html" class="block py-2 text-slate-200 hover:text-white text-base">Home</a>
+        <a href="about.html" class="block py-2 text-slate-200 hover:text-white text-base">About Company</a>
+        <a href="services.html" class="block py-2 text-slate-200 hover:text-white text-base">Services & Cold Chain</a>
+        <a href="index.html#clients" class="block py-2 text-slate-200 hover:text-white text-base">Our Clients</a>
+        <a href="fleet.html" class="block py-2 text-srbOrange font-bold text-base">Fleet & IoT Technology</a>
+        <a href="network.html" class="block py-2 text-slate-200 hover:text-white text-base">Pan-India Network</a>
+        <a href="index.html#calculator" class="block py-2 text-slate-200 hover:text-white text-base">Rate Calculator</a>
+        <a href="contact.html" class="block py-2 text-slate-200 hover:text-white text-base">Contact HQ (Narnaul)</a>
+        <div class="pt-2 flex flex-col gap-2">
+          <a href="tel:8955917201" class="btn-tech-primary py-3 rounded-xl text-center font-bold flex items-center justify-center gap-2">
+            <i class="fa-solid fa-phone"></i> Call 8955917201
+          </a>
+          <a href="https://wa.me/918955917201" target="_blank" class="bg-green-600 hover:bg-green-700 text-white py-3 rounded-xl text-center font-bold flex items-center justify-center gap-2">
+            <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero Header -->
+  <section class="py-20 bg-tech-grid bg-radial-glow relative border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <span class="text-srbOrange font-bold text-xs uppercase tracking-widest bg-srbOrange/10 px-3 py-1 rounded-full border border-srbOrange/20">High-Tech Fleet Infrastructure</span>
+        <h1 class="text-4xl sm:text-5xl font-extrabold font-display mt-4">
+          Next-Generation Vehicles <br>
+          <span class="gradient-text-orange">& Intelligent IoT Telemetry</span>
+        </h1>
+        <p class="text-slate-300 text-base sm:text-lg mt-4 leading-relaxed">
+          Every vehicle in the SRB Logistic fleet represents state-of-the-art engineering. Built upon dependable BharatBenz and Volvo chassis, insulated with high-grade PUF, and powered by intelligent Carrier chilling systems.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Detailed Fleet Matrix -->
+  <section class="py-20 bg-srbNavy/20 border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="text-3xl font-extrabold font-display text-white">Standard Fleet Lineup & Capacities</h2>
+        <p class="text-slate-400 text-sm mt-2">Engineered to accommodate varying load volumes, pallet dimensions, and road restrictions across Indian states.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- Fleet Item 1 -->
+        <div class="glass-panel p-6 sm:p-8 rounded-2xl border border-white/10 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-bold text-srbOrange uppercase tracking-wider">Heavy Arterial Long-Haul</span>
+              <span class="badge-live"><span class="pulse-dot"></span> Active Fleet</span>
+            </div>
+            <h3 class="text-2xl font-bold font-display text-white mb-2">32 Ft Multi-Axle Super Reefer</h3>
+            <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+              Designed for high-volume inter-state arterial corridors (e.g. Delhi-NCR / Narnaul to Mumbai, Chennai, Bengaluru). Accommodates standard European & Indian pallets with zero thermal bridge leakage.
+            </p>
+            
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-xs bg-srbDark p-4 rounded-xl border border-white/10 mb-6">
+              <div>
+                <span class="text-slate-500 block">Payload</span>
+                <strong class="text-white text-sm">16 - 18 MT</strong>
+              </div>
+              <div>
+                <span class="text-slate-500 block">Temp Band</span>
+                <strong class="text-cyan-400 text-sm">-25°C to +20°C</strong>
+              </div>
+              <div>
+                <span class="text-slate-500 block">Chiller Unit</span>
+                <strong class="text-white text-sm">Carrier Supra 950</strong>
+              </div>
+              <div>
+                <span class="text-slate-500 block">Pallet Slots</span>
+                <strong class="text-white text-sm">16 - 18 Pallets</strong>
+              </div>
+              <div>
+                <span class="text-slate-500 block">Internal Length</span>
+                <strong class="text-white text-sm">31.5 Feet</strong>
+              </div>
+              <div>
+                <span class="text-slate-500 block">Telemetry</span>
+                <strong class="text-green-400 text-sm">Dual Sensor IoT</strong>
+              </div>
+            </div>
+          </div>
+          <a href="contact.html?vehicle=32ft" class="w-full btn-tech-primary py-3 rounded-xl text-center font-bold text-xs">Book 32 Ft Reefer</a>
+        </div>
+
+        <!-- Fleet Item 2 -->
+        <div class="glass-panel p-6 sm:p-8 rounded-2xl border border-srbOrange/30 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-bold text-srbCyan uppercase tracking-wider">Regional High-Capacity</span>
+              <span class="badge-live"><span class="pulse-dot"></span> Active Fleet</span>
+            </div>
+            <h3 class="text-2xl font-bold font-display text-white mb-2">24 Ft BharatBenz Heavy Reefer</h3>
+            <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+              The workhorse of Indian refrigerated transportation. Highly versatile for medium-haul deliveries between state capitals, industrial estates, and manufacturing plants with rapid loading dock access.
+            </p>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-xs bg-srbDark p-4 rounded-xl border border-white/10 mb-6">
+              <div>
+                <span class="text-slate-500 block">Payload</span>
+                <strong class="text-white text-sm">12 - 14 MT</strong>
+              </div>
+              <div>
+                <span class="text-slate-500 block">Temp Band</span>
+                <strong class="text-cyan-400 text-sm">-20°C to +25°C</strong>
+              </div>
+              <div>
+                <span class="text-slate-500 block">Chiller Unit</span>
+                <strong class="text-white text-sm">Thermo King T-1000R</strong>
+              </div>
+              <div>
+                <span class="text-slate-500 block">Pallet Slots</span>
+                <strong class="text-white text-sm">12 - 14 Pallets</strong>
+              </div>
+              <div>
+                <span class="text-slate-500 block">Internal Length</span>
+                <strong class="text-white text-sm">23.8 Feet</strong>
+              </div>
+              <div>
+                <span class="text-slate-500 block">Telemetry</span>
+                <strong class="text-green-400 text-sm">Live GPS & Alarm</strong>
+              </div>
+            </div>
+          </div>
+          <a href="contact.html?vehicle=24ft" class="w-full btn-tech-primary py-3 rounded-xl text-center font-bold text-xs">Book 24 Ft Reefer</a>
+        </div>
+
+        <!-- Fleet Item 3 -->
+        <div class="glass-panel p-6 sm:p-8 rounded-2xl border border-white/10 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-bold text-green-400 uppercase tracking-wider">Agile Distribution</span>
+              <span class="badge-live"><span class="pulse-dot"></span> Active Fleet</span>
+            </div>
+            <h3 class="text-2xl font-bold font-display text-white mb-2">20 Ft BharatBenz & Tata Reefer</h3>
+            <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+              Engineered for swift point-to-point transit, perishable dairy movements, and pharmaceutical distribution across Tier-1 and Tier-2 city rings where 32ft trailers face entry constraints.
+            </p>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-xs bg-srbDark p-4 rounded-xl border border-white/10 mb-6">
+              <div>
+                <span class="text-slate-500 block">Payload</span>
+                <strong class="text-white text-sm">8 - 10 MT</strong>
+              </div>
+              <div>
+                <span class="text-slate-500 block">Temp Band</span>
+                <strong class="text-cyan-400 text-sm">-25°C to +15°C</strong>
+              </div>
+              <div>
+                <span class="text-slate-500 block">Chiller Unit</span>
+                <strong class="text-white text-sm">Carrier Citimax 700</strong>
+              </div>
+              <div>
+                <span class="text-slate-500 block">Pallet Slots</span>
+                <strong class="text-white text-sm">10 Pallets</strong>
+              </div>
+              <div>
+                <span class="text-slate-500 block">Internal Length</span>
+                <strong class="text-white text-sm">19.5 Feet</strong>
+              </div>
+              <div>
+                <span class="text-slate-500 block">Telemetry</span>
+                <strong class="text-green-400 text-sm">Remote Lock</strong>
+              </div>
+            </div>
+          </div>
+          <a href="contact.html?vehicle=20ft" class="w-full btn-tech-primary py-3 rounded-xl text-center font-bold text-xs">Book 20 Ft Reefer</a>
+        </div>
+
+        <!-- Fleet Item 4 -->
+        <div class="glass-panel p-6 sm:p-8 rounded-2xl border border-white/10 flex flex-col justify-between">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-bold text-amber-400 uppercase tracking-wider">City Express Delivery</span>
+              <span class="badge-live"><span class="pulse-dot"></span> Active Fleet</span>
+            </div>
+            <h3 class="text-2xl font-bold font-display text-white mb-2">14 Ft City & Secondary Reefer</h3>
+            <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+              Nimble urban reefer units custom-built for quick delivery to supermarkets, cold stores, quick commerce dark stores, restaurants, and hospital pharmacies with multi-stop capability.
+            </p>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-xs bg-srbDark p-4 rounded-xl border border-white/10 mb-6">
+              <div>
+                <span class="text-slate-500 block">Payload</span>
+                <strong class="text-white text-sm">4 - 5 MT</strong>
+              </div>
+              <div>
+                <span class="text-slate-500 block">Temp Band</span>
+                <strong class="text-cyan-400 text-sm">-20°C to +15°C</strong>
+              </div>
+              <div>
+                <span class="text-slate-500 block">Chiller Unit</span>
+                <strong class="text-white text-sm">Hwasung Thermo HT-250</strong>
+              </div>
+              <div>
+                <span class="text-slate-500 block">Pallet Slots</span>
+                <strong class="text-white text-sm">6 Pallets</strong>
+              </div>
+              <div>
+                <span class="text-slate-500 block">Internal Length</span>
+                <strong class="text-white text-sm">14 Feet</strong>
+              </div>
+              <div>
+                <span class="text-slate-500 block">Telemetry</span>
+                <strong class="text-green-400 text-sm">Door Sensor IoT</strong>
+              </div>
+            </div>
+          </div>
+          <a href="contact.html?vehicle=14ft" class="w-full btn-tech-primary py-3 rounded-xl text-center font-bold text-xs">Book 14 Ft Reefer</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Central IoT Command Center Technology -->
+  <section id="iot" class="py-20 bg-tech-grid">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <div class="lg:col-span-6 space-y-6">
+          <span class="text-srbCyan font-bold text-xs uppercase tracking-widest">Digital Nervous System</span>
+          <h2 class="text-3xl font-extrabold font-display text-white">
+            24/7 Intelligent IoT Control Tower (Narnaul Hub)
+          </h2>
+          <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+            Every minute an SRB Logistic vehicle is in transit, thousands of telemetry data points stream directly to our command operations desk in Narnaul. If the temperature deviates by even 1.0°C from customer setpoints, automated audio and SMS alarms trigger corrective protocol within 60 seconds.
+          </p>
+
+          <div class="space-y-3 text-xs sm:text-sm">
+            <div class="flex items-start gap-3 p-3.5 rounded-xl bg-white/5 border border-white/5">
+              <i class="fa-solid fa-satellite-dish text-srbCyan text-lg mt-0.5"></i>
+              <div>
+                <strong class="text-white">Dual-Band GPS & Geo-Fencing:</strong> Instant alerts if a truck veers off approved highway corridors or halts at unapproved waypoints.
+              </div>
+            </div>
+            <div class="flex items-start gap-3 p-3.5 rounded-xl bg-white/5 border border-white/5">
+              <i class="fa-solid fa-temperature-arrow-up text-srbOrange text-lg mt-0.5"></i>
+              <div>
+                <strong class="text-white">Predictive Thermal Algorithms:</strong> Early warning system detecting cooling system strain or ambient heatwave conditions before goods are affected.
+              </div>
+            </div>
+            <div class="flex items-start gap-3 p-3.5 rounded-xl bg-white/5 border border-white/5">
+              <i class="fa-solid fa-file-contract text-green-400 text-lg mt-0.5"></i>
+              <div>
+                <strong class="text-white">Immutable Compliance Logging:</strong> PDF and CSV exportable temperature certificates generated instantly upon consignee acceptance.
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-2">
+            <a href="tel:8955917201" class="btn-tech-primary px-6 py-3 rounded-xl font-bold text-xs inline-flex items-center gap-2">
+              <i class="fa-solid fa-headset"></i> Connect with Command Center
+            </a>
+          </div>
+        </div>
+
+        <div class="lg:col-span-6">
+          <div class="rounded-2xl overflow-hidden border border-white/15 shadow-2xl relative">
+            <img src="assets/images/tech-command-center.jpg" alt="SRB IoT Command Center" class="w-full h-[400px] object-cover">
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-srbDark border-t border-white/10 py-12 text-slate-400 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:text-left flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        © 2026 SRB Logistic. All rights reserved. Yaduvanshi Mode, Rewari Road, Narnaul, Haryana - 123001.
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="tel:8955917201" class="text-srbOrange font-bold hover:underline">Phone: 8955917201</a>
+        <span>•</span>
+        <a href="index.html" class="hover:text-white">Home</a>
+        <span>•</span>
+        <a href="contact.html" class="hover:text-white">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

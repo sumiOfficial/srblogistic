@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 80" width="280" height="80">
+  <defs>
+    <linearGradient id="sl-blue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#0284C7"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(12, 16)">
+    <!-- Flying Bird Wing Emblem -->
+    <path d="M6 38 C14 26 26 12 48 8 C34 20 26 30 18 42 Z" fill="url(#sl-blue)"/>
+    <path d="M18 42 C26 32 38 22 56 18 C44 28 36 36 28 44 Z" fill="#F59E0B"/>
+  </g>
+  <text x="80" y="36" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="21" font-weight="800" fill="#FFFFFF" letter-spacing="1.5">SKYLARK</text>
+  <text x="80" y="51" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="10.5" font-weight="700" fill="#38BDF8" letter-spacing="1">FOODS PVT. LTD.</text>
+  <text x="80" y="63" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="8.5" font-weight="500" fill="#94A3B8">PREMIUM POULTRY & FROZEN FOODS</text>
+</svg>

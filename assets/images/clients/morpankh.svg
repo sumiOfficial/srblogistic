@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 80" width="280" height="80">
+  <defs>
+    <linearGradient id="mp-peacock" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06B6D4"/>
+      <stop offset="50%" stop-color="#3B82F6"/>
+      <stop offset="100%" stop-color="#8B5CF6"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(12, 14)">
+    <!-- Peacock Feather (Morpankh) Icon -->
+    <ellipse cx="25" cy="20" rx="16" ry="22" fill="url(#mp-peacock)"/>
+    <ellipse cx="25" cy="18" rx="10" ry="13" fill="#1E3A8A"/>
+    <ellipse cx="25" cy="17" rx="5" ry="7" fill="#10B981"/>
+    <circle cx="25" cy="16" r="2.5" fill="#F59E0B"/>
+    <path d="M25 38 L25 48" stroke="#3B82F6" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <text x="72" y="35" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="18" font-weight="800" fill="#FFFFFF" letter-spacing="1.2">MORPANKH</text>
+  <text x="73" y="51" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="10" font-weight="700" fill="#06B6D4" letter-spacing="1">INDUSTRIES PVT. LTD.</text>
+  <text x="73" y="63" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="8.5" font-weight="500" fill="#94A3B8">DAIRY, AGRO & COLD STORAGE</text>
+</svg>

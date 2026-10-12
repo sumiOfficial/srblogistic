@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 80" width="280" height="80">
+  <defs>
+    <linearGradient id="bv-crimson" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E11D48"/>
+      <stop offset="100%" stop-color="#9F1239"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(12, 14)">
+    <!-- Chef Hat & Wheat Sheaf Emblem -->
+    <circle cx="26" cy="26" r="25" fill="url(#bv-crimson)"/>
+    <path d="M17 32 C13 24 18 16 26 16 C34 16 39 24 35 32 Z" fill="#FFFFFF" opacity="0.9"/>
+    <path d="M20 23 C18 19 22 15 26 15 C30 15 34 19 32 23" fill="none" stroke="#9F1239" stroke-width="1.5"/>
+    <rect x="18" y="32" width="16" height="3" rx="1" fill="#FFFFFF"/>
+  </g>
+  <text x="74" y="36" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="21" font-weight="800" fill="#FFFFFF" letter-spacing="1">Bakersville</text>
+  <text x="75" y="51" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="10" font-weight="700" fill="#FB7185" letter-spacing="1.5">INDIA PVT. LTD.</text>
+  <text x="75" y="63" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="8.5" font-weight="500" fill="#94A3B8">PREMIUM BAKERY & CONFECTIONERY</text>
+</svg>
