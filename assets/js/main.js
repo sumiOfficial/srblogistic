@@ -405,15 +405,24 @@ function updateThemeToggleUI(theme) {
   const sunIcons = document.querySelectorAll('.theme-icon-sun');
   const moonIcons = document.querySelectorAll('.theme-icon-moon');
   const themeLabels = document.querySelectorAll('.theme-toggle-label');
+  const toggleBtns = document.querySelectorAll('.theme-toggle-btn');
 
   if (theme === 'light') {
     sunIcons.forEach(icon => icon.classList.add('hidden'));
     moonIcons.forEach(icon => icon.classList.remove('hidden'));
     themeLabels.forEach(label => { label.textContent = 'Dark'; });
+    toggleBtns.forEach(btn => {
+      btn.setAttribute('title', 'Switch to Dark Mode');
+      btn.setAttribute('aria-label', 'Switch to Dark Mode');
+    });
   } else {
     sunIcons.forEach(icon => icon.classList.remove('hidden'));
     moonIcons.forEach(icon => icon.classList.add('hidden'));
     themeLabels.forEach(label => { label.textContent = 'Light'; });
+    toggleBtns.forEach(btn => {
+      btn.setAttribute('title', 'Switch to Light Mode');
+      btn.setAttribute('aria-label', 'Switch to Light Mode');
+    });
   }
 }
 
