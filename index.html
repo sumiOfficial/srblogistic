@@ -65,9 +65,6 @@
           <a href="https://wa.me/918955917201?text=Hello%20SRB%20Logistic%20Team%2C%20I%20have%20an%20inquiry%20regarding%20freight%20services" target="_blank" class="hidden sm:flex items-center gap-1.5 text-green-400 hover:text-green-300 font-semibold transition-colors">
             <i class="fa-brands fa-whatsapp text-base"></i> WhatsApp Desk
           </a>
-          <a href="#tracking" class="hidden lg:flex items-center gap-1.5 text-srbCyan hover:underline font-semibold">
-            <i class="fa-solid fa-satellite-dish"></i> Track Consignment
-          </a>
           <span class="text-white/20">|</span>
           <!-- Top Right Theme Switcher Pill -->
           <button onclick="toggleTheme()" class="theme-toggle-btn flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-white/10 hover:bg-white/20 border border-white/20 text-slate-200 hover:text-white transition-all text-xs font-semibold focus:outline-none shadow-sm cursor-pointer" title="Switch to Light Mode" aria-label="Switch to Light Mode">
@@ -99,7 +96,6 @@
             <a href="#clients" class="nav-link text-slate-300 hover:text-white transition-colors">Clients</a>
             <a href="#fleet" class="nav-link text-slate-300 hover:text-white transition-colors">Fleet</a>
             <a href="#network" class="nav-link text-slate-300 hover:text-white transition-colors">Network</a>
-            <a href="#calculator" class="nav-link text-slate-300 hover:text-white transition-colors">Calculator</a>
             <a href="#contact" class="nav-link text-slate-300 hover:text-white transition-colors">Contact</a>
           </div>
 
@@ -110,9 +106,9 @@
               <i class="fa-solid fa-sun text-amber-400 theme-icon-sun text-base transition-transform group-hover:rotate-45"></i>
               <i class="fa-solid fa-moon text-indigo-400 theme-icon-moon text-base hidden transition-transform group-hover:-rotate-12"></i>
             </button>
-            <a href="#calculator" class="btn-tech-primary px-4 xl:px-5 py-2.5 rounded-xl text-xs xl:text-sm font-bold inline-flex items-center gap-2 whitespace-nowrap shadow-lg shadow-srbOrange/20">
-              <i class="fa-solid fa-calculator text-xs"></i>
-              <span>Instant Quote</span>
+            <a href="tel:8955917201" class="btn-tech-primary px-4 xl:px-5 py-2.5 rounded-xl text-xs xl:text-sm font-bold inline-flex items-center gap-2 whitespace-nowrap shadow-lg shadow-srbOrange/20">
+              <i class="fa-solid fa-phone text-xs"></i>
+              <span>Book Now</span>
             </a>
           </div>
 
@@ -138,11 +134,10 @@
         <a href="#clients" onclick="toggleMobileMenu()" class="block py-2 text-slate-200 hover:text-white text-base">Our Clients</a>
         <a href="#fleet" onclick="toggleMobileMenu()" class="block py-2 text-slate-200 hover:text-white text-base">Fleet &amp; IoT Technology</a>
         <a href="#network" onclick="toggleMobileMenu()" class="block py-2 text-slate-200 hover:text-white text-base">Pan-India Network</a>
-        <a href="#calculator" onclick="toggleMobileMenu()" class="block py-2 text-slate-200 hover:text-white text-base">Rate Calculator</a>
         <a href="#contact" onclick="toggleMobileMenu()" class="block py-2 text-slate-200 hover:text-white text-base">Contact HQ (Narnaul)</a>
         <div class="pt-2 flex flex-col gap-2">
           <a href="tel:8955917201" class="btn-tech-primary py-3 rounded-xl text-center font-bold flex items-center justify-center gap-2">
-            <i class="fa-solid fa-phone"></i> Call 8955917201
+            <i class="fa-solid fa-phone"></i> Book Now: 8955917201
           </a>
           <a href="https://wa.me/918955917201" target="_blank" class="bg-green-600 hover:bg-green-700 text-white py-3 rounded-xl text-center font-bold flex items-center justify-center gap-2">
             <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
@@ -203,13 +198,13 @@
 
           <!-- Action Buttons -->
           <div class="flex flex-wrap items-center gap-4 pt-4">
-            <a href="#calculator" class="btn-tech-primary px-8 py-4 rounded-xl text-base font-bold inline-flex items-center gap-3">
-              <i class="fa-solid fa-bolt"></i>
-              <span>Calculate Freight Rate</span>
+            <a href="tel:8955917201" class="btn-tech-primary px-8 py-4 rounded-xl text-base font-bold inline-flex items-center gap-3 shadow-xl shadow-srbOrange/30 hover:scale-[1.02] transition-all">
+              <i class="fa-solid fa-phone"></i>
+              <span>Book Now</span>
             </a>
-            <a href="tel:8955917201" class="btn-tech-outline px-6 py-4 rounded-xl text-base font-bold inline-flex items-center gap-2">
-              <i class="fa-solid fa-headset text-srbOrange"></i>
-              <span>Call: 8955917201</span>
+            <a href="https://wa.me/918955917201?text=Hello%20SRB%20Logistic%20Team%2C%20I%20would%20like%20to%20book%20a%20consignment" target="_blank" class="btn-tech-outline px-6 py-4 rounded-xl text-base font-bold inline-flex items-center gap-2 text-green-400 hover:text-green-300 border-green-500/30 hover:border-green-400">
+              <i class="fa-brands fa-whatsapp text-lg"></i>
+              <span>WhatsApp Booking</span>
             </a>
           </div>
 
@@ -275,28 +270,6 @@
     </div>
   </section>
 
-  <!-- Live Quick Consignment Tracking Search Bar -->
-  <section id="tracking" class="relative z-20 -mt-6">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6">
-      <div class="glass-panel p-4 sm:p-6 rounded-2xl border border-white/15 shadow-2xl bg-srbCard/90">
-        <form onsubmit="trackConsignment(event)" class="flex flex-col sm:flex-row items-center gap-4">
-          <div class="relative w-full">
-            <i class="fa-solid fa-satellite-dish absolute left-4 top-1/2 -translate-y-1/2 text-srbOrange text-lg"></i>
-            <input type="text" id="tracking-input" placeholder="Enter SRB LR / Consignment No. (e.g., SRB-9842-DL, SRB-4412-HR)" class="w-full bg-srbDark/90 border border-white/20 rounded-xl pl-12 pr-4 py-3.5 text-sm sm:text-base text-white placeholder-slate-400 focus:outline-none focus:border-srbOrange transition-colors">
-          </div>
-          <button type="submit" class="w-full sm:w-auto whitespace-nowrap btn-tech-primary px-8 py-3.5 rounded-xl font-bold flex items-center justify-center gap-2">
-            <i class="fa-solid fa-radar"></i>
-            <span>Track Live Shipment</span>
-          </button>
-        </form>
-        <div class="flex flex-wrap items-center gap-2 mt-3 text-xs text-slate-400">
-          <span>Try Demo Consignments:</span>
-          <button type="button" onclick="document.getElementById('tracking-input').value='SRB-9842-DL'; trackConsignment();" class="px-2.5 py-1 rounded bg-white/5 hover:bg-white/10 text-slate-300 font-mono border border-white/10 transition-colors">SRB-9842-DL (Dairy/Deep Freeze)</button>
-          <button type="button" onclick="document.getElementById('tracking-input').value='SRB-4412-HR'; trackConsignment();" class="px-2.5 py-1 rounded bg-white/5 hover:bg-white/10 text-slate-300 font-mono border border-white/10 transition-colors">SRB-4412-HR (Pharma/Chilled)</button>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- Key Metrics / Stats Section -->
   
@@ -422,6 +395,53 @@
               <div class="text-slate-300">Modern BharatBenz reefer units staged at our central distribution dock, ready for express dispatch across Indian highway arteries.</div>
             </div>
           </div>
+        </div>
+      </div>
+
+      <!-- Leadership // Expert Team Members -->
+      <div class="mt-20 pt-16 border-t border-white/10">
+        <div class="text-center max-w-2xl mx-auto mb-14">
+          <span class="text-srbOrange font-bold text-xs uppercase tracking-widest bg-srbOrange/10 px-3 py-1 rounded-full border border-srbOrange/20">Executive Leadership</span>
+          <h3 class="text-2xl sm:text-3xl font-extrabold font-display text-white mt-2">Expert Team Members</h3>
+          <p class="text-slate-400 text-xs sm:text-sm mt-2">The leadership team driving SRB Logistic's mission with uncompromising cold chain integrity.</p>
+        </div>
+
+        <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 justify-center">
+          
+          <!-- Pooja Saini (MD) -->
+          <div class="glass-panel p-8 sm:p-10 rounded-3xl border border-white/10 hover:border-srbCyan/50 transition-all duration-300 text-center group flex flex-col items-center shadow-xl hover:shadow-srbCyan/10">
+            <div class="relative w-40 h-40 mb-6">
+              <div class="absolute inset-0 rounded-full bg-gradient-to-tr from-srbCyan to-blue-500 opacity-50 blur-md group-hover:opacity-100 transition-opacity"></div>
+              <img src="assets/images/team/pooja-saini-crop.jpg" alt="Pooja Saini - Managing Director (MD)" class="relative w-full h-full object-cover rounded-full border-4 border-srbNavy shadow-2xl group-hover:scale-105 transition-transform duration-300">
+              <span class="absolute bottom-1 right-2 w-9 h-9 rounded-full bg-srbNavy border-2 border-srbCyan flex items-center justify-center text-srbCyan text-sm shadow-lg" title="Managing Director">
+                <i class="fa-solid fa-briefcase"></i>
+              </span>
+            </div>
+            <h4 class="text-2xl font-bold font-display text-white group-hover:text-srbCyan transition-colors">Pooja Saini</h4>
+            <p class="text-srbCyan font-bold text-sm uppercase tracking-wider mt-1.5">Managing Director (MD)</p>
+            <div class="w-12 h-0.5 bg-srbCyan/40 my-3.5"></div>
+            <p class="text-slate-400 text-xs sm:text-sm leading-relaxed max-w-sm">
+              Spearheads strategic growth, fleet digitalization, and enterprise client partnerships with an uncompromising commitment to cold chain punctuality and service quality.
+            </p>
+          </div>
+
+          <!-- Shish Ram Saini (Founder) -->
+          <div class="glass-panel p-8 sm:p-10 rounded-3xl border border-white/10 hover:border-srbOrange/50 transition-all duration-300 text-center group flex flex-col items-center shadow-xl hover:shadow-srbOrange/10">
+            <div class="relative w-40 h-40 mb-6">
+              <div class="absolute inset-0 rounded-full bg-gradient-to-tr from-srbOrange to-amber-500 opacity-50 blur-md group-hover:opacity-100 transition-opacity"></div>
+              <img src="assets/images/team/shish-ram-saini-crop.jpg" alt="Shish Ram Saini - Founder" class="relative w-full h-full object-cover rounded-full border-4 border-srbNavy shadow-2xl group-hover:scale-105 transition-transform duration-300">
+              <span class="absolute bottom-1 right-2 w-9 h-9 rounded-full bg-srbNavy border-2 border-srbOrange flex items-center justify-center text-srbOrange text-sm shadow-lg" title="Founder">
+                <i class="fa-solid fa-crown"></i>
+              </span>
+            </div>
+            <h4 class="text-2xl font-bold font-display text-white group-hover:text-srbOrange transition-colors">Shish Ram Saini</h4>
+            <p class="text-srbOrange font-bold text-sm uppercase tracking-wider mt-1.5">Founder</p>
+            <div class="w-12 h-0.5 bg-srbOrange/40 my-3.5"></div>
+            <p class="text-slate-400 text-xs sm:text-sm leading-relaxed max-w-sm">
+              Founded SRB Logistic with foundational values of reliability, driver pilot welfare, and seamless temperature-controlled connectivity across India's key industrial corridors.
+            </p>
+          </div>
+
         </div>
       </div>
 
@@ -698,7 +718,7 @@
       </div>
 
       <!-- Infinite Logo Marquee Strip (Verified Client Logos) -->
-      <div class="w-full overflow-hidden py-4 border-y border-white/10 bg-srbNavy/50 backdrop-blur-md mb-14 rounded-2xl relative">
+      <div class="w-full overflow-hidden py-4 border-y border-white/10 bg-srbNavy/50 backdrop-blur-md rounded-2xl relative shadow-lg">
         <div class="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-srbDark to-transparent z-10 pointer-events-none"></div>
         <div class="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-srbDark to-transparent z-10 pointer-events-none"></div>
 
@@ -750,276 +770,8 @@
         </div>
       </div>
 
-      <!-- Category Filter Tabs -->
-      <div class="flex flex-wrap items-center justify-center gap-2 sm:gap-3 mb-10 text-xs font-bold">
-        <button onclick="filterClients('all')" data-filter="all" class="client-filter-tab px-4 py-2 rounded-xl bg-srbOrange text-white border border-srbOrange transition-all">
-          All Partners (10)
-        </button>
-        <button onclick="filterClients('dairy')" data-filter="dairy" class="client-filter-tab px-4 py-2 rounded-xl bg-white/5 text-slate-400 border border-white/10 hover:text-white transition-all">
-          Dairy &amp; Cheese
-        </button>
-        <button onclick="filterClients('bakery')" data-filter="bakery" class="client-filter-tab px-4 py-2 rounded-xl bg-white/5 text-slate-400 border border-white/10 hover:text-white transition-all">
-          Bakery &amp; Ingredients
-        </button>
-        <button onclick="filterClients('frozen')" data-filter="frozen" class="client-filter-tab px-4 py-2 rounded-xl bg-white/5 text-slate-400 border border-white/10 hover:text-white transition-all">
-          Frozen Foods &amp; IQF
-        </button>
-        <button onclick="filterClients('poultry-agro')" data-filter="poultry-agro" class="client-filter-tab px-4 py-2 rounded-xl bg-white/5 text-slate-400 border border-white/10 hover:text-white transition-all">
-          Poultry &amp; Agro Exports
-        </button>
-      </div>
-
-      <!-- Detailed Client Cards Grid -->
-      <div id="client-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        
-        <!-- Client 1: Holyland Marketing (Logo Verified) -->
-        <div class="client-item client-card glass-panel rounded-2xl border border-white/10 p-6 flex flex-col justify-between" data-category="all frozen">
-          <div>
-            <div class="bg-srbDark/90 p-3 rounded-xl border border-white/10 flex items-center justify-center mb-4 h-20">
-              <img src="assets/images/clients/holyland-official.webp" alt="Holyland Marketing Pvt. Ltd. Official Logo" class="max-h-12 w-auto object-contain">
-            </div>
-            <div class="flex items-center justify-between mb-2">
-              <span class="text-xs font-bold text-amber-400">Processed &amp; Frozen Foods</span>
-              <span class="text-[10px] bg-white/10 text-slate-300 px-2 py-0.5 rounded-full">New Delhi / NCR</span>
-            </div>
-            <h3 class="text-lg font-bold font-display text-white">Holyland Marketing Pvt. Ltd.</h3>
-            <p class="text-slate-400 text-xs mt-2 leading-relaxed">
-              Nationwide distributor of iconic consumer brands <em>Golden Crown</em> &amp; <em>Mr. Freeze</em>, relying on SRB Logistic for interstate reefer linehauls.
-            </p>
-          </div>
-          <div class="mt-4 pt-3 border-t border-white/10 flex items-center justify-between text-[11px]">
-            <span class="text-slate-400">Temp Band: <strong class="text-cyan-300">-18°C Deep Freeze</strong></span>
-            <span class="text-green-400 font-bold"><i class="fa-solid fa-check-double mr-1"></i>0% Spoilage</span>
-          </div>
-        </div>
-
-        <!-- Client 2: Bakersville India (Logo Verified) -->
-        <div class="client-item client-card glass-panel rounded-2xl border border-white/10 p-6 flex flex-col justify-between" data-category="all bakery">
-          <div>
-            <div class="bg-srbDark/90 p-3 rounded-xl border border-white/10 flex items-center justify-center mb-4 h-20">
-              <img src="assets/images/clients/bakersville-official.png" alt="Bakersville India Pvt. Ltd. Official Logo" class="max-h-12 w-auto object-contain">
-            </div>
-            <div class="flex items-center justify-between mb-2">
-              <span class="text-xs font-bold text-rose-400">Bakery Ingredients &amp; Chocolate</span>
-              <span class="text-[10px] bg-white/10 text-slate-300 px-2 py-0.5 rounded-full">Indore / Pan-India</span>
-            </div>
-            <h3 class="text-lg font-bold font-display text-white">Bakersville India Pvt. Ltd.</h3>
-            <p class="text-slate-400 text-xs mt-2 leading-relaxed">
-              India's premier manufacturer of professional cake decorating ingredients, chocolate compounds, and whipping toppings requiring controlled ambient transit.
-            </p>
-          </div>
-          <div class="mt-4 pt-3 border-t border-white/10 flex items-center justify-between text-[11px]">
-            <span class="text-slate-400">Temp Band: <strong class="text-amber-300">+15°C to +20°C</strong></span>
-            <span class="text-green-400 font-bold"><i class="fa-solid fa-check-double mr-1"></i>Dual Sensor IoT</span>
-          </div>
-        </div>
-
-        <!-- Client 3: Skylark Foods (Logo Verified) -->
-        <div class="client-item client-card glass-panel rounded-2xl border border-white/10 p-6 flex flex-col justify-between" data-category="all poultry-agro frozen">
-          <div>
-            <div class="bg-srbDark/90 p-3 rounded-xl border border-white/10 flex items-center justify-center mb-4 h-20">
-              <img src="assets/images/clients/skylark-official.jpg" alt="Skylark Foods Pvt. Ltd. Official Logo" class="max-h-12 w-auto object-contain rounded">
-            </div>
-            <div class="flex items-center justify-between mb-2">
-              <span class="text-xs font-bold text-sky-400">Poultry &amp; Frozen Meat</span>
-              <span class="text-[10px] bg-white/10 text-slate-300 px-2 py-0.5 rounded-full">Sonipat / Jind, Haryana</span>
-            </div>
-            <h3 class="text-lg font-bold font-display text-white">Skylark Foods Pvt. Ltd.</h3>
-            <p class="text-slate-400 text-xs mt-2 leading-relaxed">
-              A flagship division of the Skylark Group, trusting SRB Logistic for uninterrupted deep freeze meat transit across Northern &amp; Western corridors.
-            </p>
-          </div>
-          <div class="mt-4 pt-3 border-t border-white/10 flex items-center justify-between text-[11px]">
-            <span class="text-slate-400">Temp Band: <strong class="text-cyan-300">-22°C Sub-Zero</strong></span>
-            <span class="text-green-400 font-bold"><i class="fa-solid fa-check-double mr-1"></i>32Ft Reefers</span>
-          </div>
-        </div>
-
-        <!-- Client 4: Harvest Grove LLP (Logo Hidden - Not on Internet) -->
-        <div class="client-item client-card glass-panel rounded-2xl border border-white/10 p-6 flex flex-col justify-between" data-category="all poultry-agro">
-          <div>
-            <!-- Logo Hidden per user requirement -->
-            <div class="p-3.5 rounded-xl bg-white/5 border border-white/5 flex items-center justify-between mb-4">
-              <span class="text-xs font-bold text-slate-300 flex items-center gap-2">
-                <i class="fa-solid fa-handshake-simple text-srbOrange"></i> Enterprise Client
-              </span>
-              <span class="text-[10px] text-green-400 font-mono bg-green-500/10 px-2.5 py-0.5 rounded-full border border-green-500/20">Verified Partner</span>
-            </div>
-            <div class="flex items-center justify-between mb-2">
-              <span class="text-xs font-bold text-emerald-400">Agro Produce &amp; Cold Storage</span>
-              <span class="text-[10px] bg-white/10 text-slate-300 px-2 py-0.5 rounded-full">Hisar, Haryana</span>
-            </div>
-            <h3 class="text-lg font-bold font-display text-white">Harvest Grove LLP</h3>
-            <p class="text-slate-400 text-xs mt-2 leading-relaxed">
-              Specialists in farm-level agricultural produce consolidation and temperature-sensitive horticultural movement to Tier-1 wholesale markets.
-            </p>
-          </div>
-          <div class="mt-4 pt-3 border-t border-white/10 flex items-center justify-between text-[11px]">
-            <span class="text-slate-400">Temp Band: <strong class="text-emerald-300">+2°C to +6°C Chilled</strong></span>
-            <span class="text-green-400 font-bold"><i class="fa-solid fa-check-double mr-1"></i>Fast Transit</span>
-          </div>
-        </div>
-
-        <!-- Client 5: Morpankh Industries (Logo Hidden - Not on Internet) -->
-        <div class="client-item client-card glass-panel rounded-2xl border border-white/10 p-6 flex flex-col justify-between" data-category="all dairy">
-          <div>
-            <!-- Logo Hidden per user requirement -->
-            <div class="p-3.5 rounded-xl bg-white/5 border border-white/5 flex items-center justify-between mb-4">
-              <span class="text-xs font-bold text-slate-300 flex items-center gap-2">
-                <i class="fa-solid fa-handshake-simple text-srbOrange"></i> Enterprise Client
-              </span>
-              <span class="text-[10px] text-green-400 font-mono bg-green-500/10 px-2.5 py-0.5 rounded-full border border-green-500/20">Verified Partner</span>
-            </div>
-            <div class="flex items-center justify-between mb-2">
-              <span class="text-xs font-bold text-blue-400">Dairy &amp; Ghee Manufacturing</span>
-              <span class="text-[10px] bg-white/10 text-slate-300 px-2 py-0.5 rounded-full">Bhopal, MP</span>
-            </div>
-            <h3 class="text-lg font-bold font-display text-white">Morpankh Industries Pvt. Ltd.</h3>
-            <p class="text-slate-400 text-xs mt-2 leading-relaxed">
-              Producers of premium dairy products, butter, khoya, and paneer transported through the SRB Logistic precision-regulated reefer network.
-            </p>
-          </div>
-          <div class="mt-4 pt-3 border-t border-white/10 flex items-center justify-between text-[11px]">
-            <span class="text-slate-400">Temp Band: <strong class="text-cyan-300">+4°C Dairy Standard</strong></span>
-            <span class="text-green-400 font-bold"><i class="fa-solid fa-check-double mr-1"></i>Dedicated Fleet</span>
-          </div>
-        </div>
-
-        <!-- Client 6: Diamond Frozen Foods (Logo Verified) -->
-        <div class="client-item client-card glass-panel rounded-2xl border border-white/10 p-6 flex flex-col justify-between" data-category="all frozen">
-          <div>
-            <div class="bg-srbDark/90 p-3 rounded-xl border border-white/10 flex items-center justify-center mb-4 h-20">
-              <img src="assets/images/clients/diamond-official.jpeg" alt="Diamond Frozen Food LLP Official Logo" class="max-h-14 w-auto object-contain rounded-full">
-            </div>
-            <div class="flex items-center justify-between mb-2">
-              <span class="text-xs font-bold text-cyan-400">IQF Vegetables &amp; Green Peas</span>
-              <span class="text-[10px] bg-white/10 text-slate-300 px-2 py-0.5 rounded-full">Badnawar, Dhar, MP</span>
-            </div>
-            <h3 class="text-lg font-bold font-display text-white">Diamond Frozen Food LLP</h3>
-            <p class="text-slate-400 text-xs mt-2 leading-relaxed">
-              Leading producers of Individual Quick Freezing (IQF) green peas, sweet corn, and strawberries, requiring continuous -18°C temperature logs.
-            </p>
-          </div>
-          <div class="mt-4 pt-3 border-t border-white/10 flex items-center justify-between text-[11px]">
-            <span class="text-slate-400">Temp Band: <strong class="text-cyan-300">-18°C Guaranteed</strong></span>
-            <span class="text-green-400 font-bold"><i class="fa-solid fa-check-double mr-1"></i>Zero Thermal Shock</span>
-          </div>
-        </div>
-
-        <!-- Client 7: Monsoon Agro (Logo Verified) -->
-        <div class="client-item client-card glass-panel rounded-2xl border border-white/10 p-6 flex flex-col justify-between" data-category="all frozen">
-          <div>
-            <div class="bg-srbDark/90 p-3 rounded-xl border border-white/10 flex items-center justify-center mb-4 h-20">
-              <img src="assets/images/clients/monsoon-official.png" alt="Monsoon Agro Bio Limited Official Logo" class="max-h-12 w-auto object-contain">
-            </div>
-            <div class="flex items-center justify-between mb-2">
-              <span class="text-xs font-bold text-emerald-400">Sweet Corn &amp; Ready Foods</span>
-              <span class="text-[10px] bg-white/10 text-slate-300 px-2 py-0.5 rounded-full">Pune / Maharashtra</span>
-            </div>
-            <h3 class="text-lg font-bold font-display text-white">Monsoon Agro Bio Limited</h3>
-            <p class="text-slate-400 text-xs mt-2 leading-relaxed">
-              Pioneers behind <em>Corn Club</em> and <em>Easy Foods</em>, utilizing the SRB Logistic Western Express corridor for rapid retail replenishment.
-            </p>
-          </div>
-          <div class="mt-4 pt-3 border-t border-white/10 flex items-center justify-between text-[11px]">
-            <span class="text-slate-400">Temp Band: <strong class="text-cyan-300">-20°C Reefer FTL</strong></span>
-            <span class="text-green-400 font-bold"><i class="fa-solid fa-check-double mr-1"></i>Highway Express</span>
-          </div>
-        </div>
-
-        <!-- Client 8: Choudhery Cheese Bazar (Logo Hidden - Not on Internet) -->
-        <div class="client-item client-card glass-panel rounded-2xl border border-white/10 p-6 flex flex-col justify-between" data-category="all dairy">
-          <div>
-            <!-- Logo Hidden per user requirement -->
-            <div class="p-3.5 rounded-xl bg-white/5 border border-white/5 flex items-center justify-between mb-4">
-              <span class="text-xs font-bold text-slate-300 flex items-center gap-2">
-                <i class="fa-solid fa-handshake-simple text-srbOrange"></i> Enterprise Client
-              </span>
-              <span class="text-[10px] text-green-400 font-mono bg-green-500/10 px-2.5 py-0.5 rounded-full border border-green-500/20">Verified Partner</span>
-            </div>
-            <div class="flex items-center justify-between mb-2">
-              <span class="text-xs font-bold text-amber-400">Gourmet Cheese &amp; Dairy</span>
-              <span class="text-[10px] bg-white/10 text-slate-300 px-2 py-0.5 rounded-full">Greater Noida / Delhi-NCR</span>
-            </div>
-            <h3 class="text-lg font-bold font-display text-white">Choudhery Cheese Bazar Pvt. Ltd.</h3>
-            <p class="text-slate-400 text-xs mt-2 leading-relaxed">
-              Renowned Indian cheese master serving top Italian pizza chains and 5-star hotels with fresh Mozzarella, Cheddar, and Gouda under strict chill controls.
-            </p>
-          </div>
-          <div class="mt-4 pt-3 border-t border-white/10 flex items-center justify-between text-[11px]">
-            <span class="text-slate-400">Temp Band: <strong class="text-amber-300">+2°C to +4°C Chill</strong></span>
-            <span class="text-green-400 font-bold"><i class="fa-solid fa-check-double mr-1"></i>Cold-Dock Loading</span>
-          </div>
-        </div>
-
-        <!-- Client 9: C.M. Food & Allied Products (Logo Verified) -->
-        <div class="client-item client-card glass-panel rounded-2xl border border-white/10 p-6 flex flex-col justify-between" data-category="all bakery">
-          <div>
-            <div class="bg-srbDark/90 p-3 rounded-xl border border-white/10 flex items-center justify-center mb-4 h-20">
-              <img src="assets/images/clients/cmfood-official.png" alt="C.M. Food & Allied Products Official Logo" class="max-h-12 w-auto object-contain">
-            </div>
-            <div class="flex items-center justify-between mb-2">
-              <span class="text-xs font-bold text-red-400">Food Ingredients &amp; HoReCa</span>
-              <span class="text-[10px] bg-white/10 text-slate-300 px-2 py-0.5 rounded-full">Ghaziabad, UP</span>
-            </div>
-            <h3 class="text-lg font-bold font-display text-white">C.M. Food &amp; Allied Products</h3>
-            <p class="text-slate-400 text-xs mt-2 leading-relaxed">
-              Multi-unit food manufacturing enterprise supplying bakery premixes, non-dairy whipping cream, and chocolate glazes nationwide via SRB Logistic.
-            </p>
-          </div>
-          <div class="mt-4 pt-3 border-t border-white/10 flex items-center justify-between text-[11px]">
-            <span class="text-slate-400">Temp Band: <strong class="text-cyan-300">-15°C &amp; Controlled Ambient</strong></span>
-            <span class="text-green-400 font-bold"><i class="fa-solid fa-check-double mr-1"></i>Multi-Point Drop</span>
-          </div>
-        </div>
-
-        <!-- Client 10: Vaidik International (Logo Hidden - Not on Internet) -->
-        <div class="client-item client-card glass-panel rounded-2xl border border-white/10 p-6 flex flex-col justify-between" data-category="all poultry-agro">
-          <div>
-            <!-- Logo Hidden per user requirement -->
-            <div class="p-3.5 rounded-xl bg-white/5 border border-white/5 flex items-center justify-between mb-4">
-              <span class="text-xs font-bold text-slate-300 flex items-center gap-2">
-                <i class="fa-solid fa-handshake-simple text-srbOrange"></i> Enterprise Client
-              </span>
-              <span class="text-[10px] text-green-400 font-mono bg-green-500/10 px-2.5 py-0.5 rounded-full border border-green-500/20">Verified Partner</span>
-            </div>
-            <div class="flex items-center justify-between mb-2">
-              <span class="text-xs font-bold text-orange-400">Agro Commodities &amp; Exports</span>
-              <span class="text-[10px] bg-white/10 text-slate-300 px-2 py-0.5 rounded-full">Pan-India / Exports</span>
-            </div>
-            <h3 class="text-lg font-bold font-display text-white">Vaidik International</h3>
-            <p class="text-slate-400 text-xs mt-2 leading-relaxed">
-              Specialized food exporter moving bulk agricultural produce, spices, and perishable commodities to maritime container ports via dedicated highway lines.
-            </p>
-          </div>
-          <div class="mt-4 pt-3 border-t border-white/10 flex items-center justify-between text-[11px]">
-            <span class="text-slate-400">Temp Band: <strong class="text-orange-300">Port-Bound Express FTL</strong></span>
-            <span class="text-green-400 font-bold"><i class="fa-solid fa-check-double mr-1"></i>Direct Port Entry</span>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Trust Sub-Banner -->
-      <div class="mt-14 glass-panel p-6 sm:p-8 rounded-2xl border border-srbOrange/30 text-center flex flex-col sm:flex-row items-center justify-between gap-6">
-        <div class="text-left">
-          <h4 class="text-lg font-bold text-white">Partner with India's Premier Cold Chain Transporter</h4>
-          <p class="text-xs text-slate-400 mt-1">Join the leaders in food processing, dairy, and pharmaceuticals who rely on SRB Logistic every single day.</p>
-        </div>
-        <div class="flex items-center gap-3">
-          <a href="tel:8955917201" class="btn-tech-outline px-5 py-2.5 rounded-xl text-xs font-bold inline-flex items-center gap-2">
-            <i class="fa-solid fa-phone text-srbOrange"></i> 8955917201
-          </a>
-          <a href="#calculator" class="btn-tech-primary px-5 py-2.5 rounded-xl text-xs font-bold inline-flex items-center gap-2">
-            <span>Get Enterprise Quote</span>
-          </a>
-        </div>
-      </div>
-
     </div>
   </section>
-
-  <!-- Interactive Freight Calculator & Instant WhatsApp Quoting Engine -->
   
   <!-- High-Tech Milestone Separator: Fleet -->
   <div class="section-milestone">
@@ -1283,167 +1035,6 @@
       </div>
     </div>
   </section>
-
-  <!-- Fleet Showcase Preview -->
-  
-  <!-- High-Tech Milestone Separator: Calculator -->
-  <div class="section-milestone">
-    <div class="milestone-badge">
-      <span class="w-2.5 h-2.5 rounded-full bg-green-400 animate-ping"></span>
-      <span class="text-slate-200 font-bold tracking-wider font-bold">INTERACTIVE FREIGHT RATE CALCULATOR</span>
-      <i class="fa-solid fa-chevron-down text-green-400 text-xs ml-1"></i>
-    </div>
-  </div>
-<section id="calculator" class="py-20 bg-tech-grid relative">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center max-w-3xl mx-auto mb-12">
-        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-green-500/10 border border-green-500/30 text-green-400 text-xs font-mono font-bold uppercase tracking-wider mb-2"><span class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span><span>INSTANT FREIGHT RATE INTELLIGENCE</span></div>
-        <h2 class="text-3xl sm:text-4xl font-extrabold font-display mt-3">Smart Freight & Route Rate Calculator</h2>
-        <p class="text-slate-400 text-sm sm:text-base mt-2">Get instant ballpark pricing, estimated transit hours, and payload feasibility for your routes across India.</p>
-      </div>
-
-      <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-        <!-- Input Form -->
-        <div class="lg:col-span-7 glass-panel p-6 sm:p-8 rounded-2xl border border-white/15 shadow-xl">
-          <h3 class="text-lg font-bold text-white mb-6 flex items-center gap-2">
-            <i class="fa-solid fa-sliders text-srbOrange"></i>
-            <span>Route & Cargo Parameters</span>
-          </h3>
-
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
-            <div>
-              <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Origin City (Pickup)</label>
-              <div class="relative">
-                <select id="calc-origin" class="w-full bg-srbDark border border-white/15 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-srbOrange">
-                  <option value="Narnaul" selected>Narnaul (Haryana HQ)</option>
-                  <option value="Delhi-NCR">Delhi-NCR (Kundli/Gurugram)</option>
-                  <option value="Jaipur">Jaipur (Rajasthan)</option>
-                  <option value="Mumbai">Mumbai (JNPT/Bhiwandi)</option>
-                  <option value="Pune">Pune (Maharashtra)</option>
-                  <option value="Ahmedabad">Ahmedabad (Gujarat)</option>
-                  <option value="Bengaluru">Bengaluru (Karnataka)</option>
-                  <option value="Hyderabad">Hyderabad (Telangana)</option>
-                  <option value="Chennai">Chennai (Tamil Nadu)</option>
-                  <option value="Kolkata">Kolkata (West Bengal)</option>
-                  <option value="Chandigarh">Chandigarh / Ludhiana</option>
-                  <option value="Surat">Surat (Gujarat)</option>
-                </select>
-              </div>
-            </div>
-
-            <div>
-              <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Destination City (Drop)</label>
-              <div class="relative">
-                <select id="calc-destination" class="w-full bg-srbDark border border-white/15 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-srbOrange">
-                  <option value="Mumbai" selected>Mumbai (JNPT/Bhiwandi)</option>
-                  <option value="Narnaul">Narnaul (Haryana HQ)</option>
-                  <option value="Delhi-NCR">Delhi-NCR (Kundli/Gurugram)</option>
-                  <option value="Jaipur">Jaipur (Rajasthan)</option>
-                  <option value="Pune">Pune (Maharashtra)</option>
-                  <option value="Ahmedabad">Ahmedabad (Gujarat)</option>
-                  <option value="Bengaluru">Bengaluru (Karnataka)</option>
-                  <option value="Hyderabad">Hyderabad (Telangana)</option>
-                  <option value="Chennai">Chennai (Tamil Nadu)</option>
-                  <option value="Kolkata">Kolkata (West Bengal)</option>
-                  <option value="Chandigarh">Chandigarh / Ludhiana</option>
-                  <option value="Surat">Surat (Gujarat)</option>
-                </select>
-              </div>
-            </div>
-          </div>
-
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
-            <div>
-              <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Cargo Classification</label>
-              <select id="calc-cargo" class="w-full bg-srbDark border border-white/15 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-srbOrange">
-                <option value="deep-freeze" selected>Deep Freeze Reefer (-18°C to -25°C: Ice Cream/Meat)</option>
-                <option value="chilled">Chilled Reefer (+2°C to +8°C: Dairy/F&V)</option>
-                <option value="pharma">Pharma GDP Certified (+15°C to +25°C)</option>
-                <option value="dry">Dry Ambient FTL (Standard Full Truckload)</option>
-              </select>
-            </div>
-
-            <div>
-              <label class="block text-xs font-semibold text-slate-300 uppercase mb-2">Required Vehicle Configuration</label>
-              <select id="calc-vehicle" class="w-full bg-srbDark border border-white/15 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-srbOrange">
-                <option value="32ft-reefer" selected>32 Ft Multi-Axle Reefer (16-18 MT Capacity)</option>
-                <option value="24ft-reefer">24 Ft Heavy Reefer (12-14 MT Capacity)</option>
-                <option value="20ft-reefer">20 Ft BharatBenz Reefer (8-10 MT Capacity)</option>
-                <option value="14ft-reefer">14 Ft City Express Reefer (4-5 MT Capacity)</option>
-                <option value="32ft-dry">32 Ft MXL Container (Dry FTL 15 MT)</option>
-              </select>
-            </div>
-          </div>
-
-          <button onclick="calculateFreight()" class="w-full btn-tech-primary py-4 rounded-xl text-base font-bold flex items-center justify-center gap-2">
-            <i class="fa-solid fa-calculator"></i>
-            <span>Calculate Route Estimate</span>
-          </button>
-        </div>
-
-        <!-- Output Box & Direct WhatsApp Action -->
-        <div class="lg:col-span-5">
-          <div id="calc-results" class="glass-panel p-6 sm:p-8 rounded-2xl border border-srbOrange/40 shadow-2xl relative overflow-hidden">
-            <div class="absolute top-0 right-0 w-32 h-32 bg-srbOrange/10 rounded-full blur-2xl pointer-events-none"></div>
-
-            <div class="flex items-center justify-between pb-4 border-b border-white/10 mb-6">
-              <h3 class="font-bold text-white text-base">Route Feasibility Breakdown</h3>
-              <span class="badge-live"><span class="pulse-dot"></span> Live Estimate</span>
-            </div>
-
-            <div class="space-y-4 text-sm">
-              <div class="flex justify-between items-center py-1">
-                <span class="text-slate-400">Corridor Route:</span>
-                <span id="res-route" class="font-bold text-white">Narnaul ➔ Mumbai</span>
-              </div>
-              <div class="flex justify-between items-center py-1">
-                <span class="text-slate-400">Approx. Distance:</span>
-                <span id="res-distance" class="font-bold font-mono text-srbCyan">1,280 km</span>
-              </div>
-              <div class="flex justify-between items-center py-1">
-                <span class="text-slate-400">Estimated Transit Time:</span>
-                <span id="res-time" class="font-bold font-mono text-amber-400">~32 Hours (1.3 Days)</span>
-              </div>
-              <div class="flex justify-between items-center py-1">
-                <span class="text-slate-400">Assigned Vehicle:</span>
-                <span id="res-vehicle" class="font-semibold text-slate-200">32 Ft Multi-Axle Reefer</span>
-              </div>
-              <div class="flex justify-between items-center py-1">
-                <span class="text-slate-400">Payload Capacity:</span>
-                <span id="res-capacity" class="font-semibold text-slate-200">16 - 18 MT</span>
-              </div>
-              <div class="flex justify-between items-center py-1">
-                <span class="text-slate-400">Temperature Protocol:</span>
-                <span id="res-cargo" class="font-semibold text-slate-200">Deep Freeze (-25°C to -18°C)</span>
-              </div>
-
-              <!-- Estimated Price Range -->
-              <div class="bg-srbDark/80 p-4 rounded-xl border border-white/10 mt-6 text-center">
-                <div class="text-xs text-slate-400 uppercase tracking-wider mb-1">Estimated Commercial Bracket (INR)</div>
-                <div id="res-estimate" class="text-2xl sm:text-3xl font-extrabold font-mono text-srbOrange">₹1,07,000 - ₹1,21,000</div>
-                <div class="text-[11px] text-slate-400 mt-1">*Includes diesel surcharge & toll allowance. Excludes GST.</div>
-              </div>
-
-              <!-- WhatsApp CTA with pre-populated message -->
-              <div class="pt-4 flex flex-col gap-2">
-                <a id="wa-quote-btn" href="https://wa.me/918955917201?text=Hello%20SRB%20Logistic%20Team%2C%20I%20would%20like%20to%20confirm%20a%20freight%20booking" target="_blank" class="w-full bg-green-600 hover:bg-green-700 text-white py-3.5 rounded-xl font-bold flex items-center justify-center gap-2 transition-colors">
-                  <i class="fa-brands fa-whatsapp text-lg"></i>
-                  <span>Lock Quote & Reserve Truck</span>
-                </a>
-                <a href="tel:8955917201" class="w-full btn-tech-outline py-3 rounded-xl font-semibold flex items-center justify-center gap-2 text-xs">
-                  <i class="fa-solid fa-phone text-srbOrange"></i>
-                  <span>Speak with Freight Desk: 8955917201</span>
-                </a>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Comprehensive Solutions & Services Grid -->
   
   <!-- High-Tech Milestone Separator: Contact -->
   <div class="section-milestone">
@@ -1661,96 +1252,6 @@
   <a href="tel:8955917201" class="call-floating w-14 h-14 bg-srbOrange hover:bg-srbOrangeHover rounded-full flex items-center justify-center text-white text-xl transition-all" title="Call SRB Logistic: 8955917201">
     <i class="fa-solid fa-phone"></i>
   </a>
-
-  <!-- Interactive Shipment Tracking Result Modal -->
-  <div id="tracking-result-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md hidden">
-    <div class="glass-panel p-6 sm:p-8 rounded-3xl border border-white/20 max-w-2xl w-full max-h-[90vh] overflow-y-auto relative shadow-2xl">
-      <button onclick="closeTrackingModal()" class="absolute top-5 right-5 text-slate-400 hover:text-white p-2 text-xl">
-        <i class="fa-solid fa-xmark"></i>
-      </button>
-
-      <div class="flex items-center gap-3 mb-6 pb-4 border-b border-white/10">
-        <div class="p-2.5 rounded-xl bg-srbOrange/20 text-srbOrange text-xl">
-          <i class="fa-solid fa-satellite"></i>
-        </div>
-        <div>
-          <div class="text-xs uppercase font-bold text-slate-400 tracking-wider">Live IoT Telemetry Feed</div>
-          <h3 class="text-xl font-bold font-display text-white">Consignment: <span id="modal-tracking-id" class="text-srbOrange font-mono"></span></h3>
-        </div>
-      </div>
-
-      <!-- Telemetry Dashboard Metrics -->
-      <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-6 text-center">
-        <div class="bg-srbDark p-3 rounded-xl border border-white/10">
-          <div class="text-[10px] text-slate-400 uppercase">Reefer Chamber</div>
-          <div id="modal-temp" class="text-sm font-bold font-mono text-cyan-300 mt-0.5">-18.4°C</div>
-        </div>
-        <div class="bg-srbDark p-3 rounded-xl border border-white/10">
-          <div class="text-[10px] text-slate-400 uppercase">Thermal Integrity</div>
-          <div id="modal-temp-status" class="text-xs font-bold mt-1">LOCKED</div>
-        </div>
-        <div class="bg-srbDark p-3 rounded-xl border border-white/10">
-          <div class="text-[10px] text-slate-400 uppercase">Estimated ETA</div>
-          <div id="modal-eta" class="text-sm font-bold font-mono text-amber-400 mt-0.5">14h 20m</div>
-        </div>
-        <div class="bg-srbDark p-3 rounded-xl border border-white/10">
-          <div class="text-[10px] text-slate-400 uppercase">Door Sensor</div>
-          <div class="text-xs font-bold text-green-400 mt-1">SEALED (Lock Active)</div>
-        </div>
-      </div>
-
-      <!-- Progress Bar -->
-      <div class="mb-6">
-        <div class="flex justify-between text-xs text-slate-400 mb-1.5 font-semibold">
-          <span>Route Progress</span>
-          <span class="text-srbOrange font-mono">Active Transit</span>
-        </div>
-        <div class="w-full bg-srbDark h-3 rounded-full overflow-hidden p-0.5 border border-white/10">
-          <div id="modal-progress" class="bg-gradient-to-r from-srbOrange to-srbCyan h-full rounded-full transition-all duration-1000" style="width: 65%;"></div>
-        </div>
-      </div>
-
-      <!-- Route Milestones Timeline -->
-      <div class="space-y-4 text-xs mb-6 bg-srbDark/80 p-4 rounded-xl border border-white/10">
-        <div class="timeline-step">
-          <div class="font-bold text-white">Origin Facility</div>
-          <div id="modal-origin" class="text-slate-400">Kundli Central Hub, Delhi-NCR</div>
-        </div>
-        <div class="timeline-step">
-          <div class="font-bold text-srbCyan flex items-center gap-1.5">
-            <span class="pulse-dot"></span> Current Real-Time Location
-          </div>
-          <div id="modal-current-loc" class="text-slate-300 font-semibold">Passing Jaipur Bypass Expressway (NH-48)</div>
-        </div>
-        <div class="timeline-step">
-          <div class="font-bold text-white">Destination Facility</div>
-          <div id="modal-dest" class="text-slate-400">Bhiwandi Cold Logistic Park, Mumbai</div>
-        </div>
-      </div>
-
-      <!-- Vehicle & Driver Card -->
-      <div class="bg-srbDark p-4 rounded-xl border border-white/10 text-xs flex flex-col sm:flex-row items-center justify-between gap-3 mb-6">
-        <div>
-          <span class="text-slate-400">Assigned Vehicle:</span>
-          <span id="modal-truck" class="font-bold text-white ml-1">BharatBenz 32Ft Reefer (HR-35-B-4921)</span>
-        </div>
-        <div>
-          <span class="text-slate-400">Driver Pilot:</span>
-          <span id="modal-driver" class="font-bold text-white ml-1">Rajesh Kumar (+91 98XXX-XX711)</span>
-        </div>
-      </div>
-
-      <div class="flex flex-col sm:flex-row gap-3">
-        <a href="https://wa.me/918955917201?text=Hello%20SRB%20Logistic%20Control%20Tower%2C%20inquiry%20regarding%20active%20consignment" target="_blank" class="flex-1 bg-green-600 hover:bg-green-700 text-white py-3 rounded-xl font-bold text-center text-xs flex items-center justify-center gap-2">
-          <i class="fa-brands fa-whatsapp"></i> Speak with Control Tower
-        </a>
-        <button onclick="closeTrackingModal()" class="btn-tech-outline px-6 py-3 rounded-xl font-bold text-xs">
-          Close Window
-        </button>
-      </div>
-
-    </div>
-  </div>
 
   <!-- JavaScript Bundle -->
   <script src="assets/js/main.js"></script>

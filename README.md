@@ -37,25 +37,17 @@ This website is custom-engineered for **SRB Logistic** as an enterprise-grade, h
 
 ## 🚀 Interactive High-Tech Features
 
-1. **Interactive Freight Rate & Corridor Calculator (`index.html#calculator`)**:
-   - Dynamic route distance engine between Indian freight centers (Narnaul, Delhi-NCR, Mumbai, Bengaluru, Pune, Ahmedabad, Jaipur, Chennai, Kolkata, etc.).
-   - Vehicle selector (32 Ft Multi-Axle Reefer, 24 Ft Heavy Reefer, 20 Ft Reefer, 14 Ft Urban Reefer, 32 Ft Dry MXL).
-   - Cargo temperature factors (Deep Freeze `-25°C to -18°C`, Chilled `+2°C to +8°C`, Pharma GDP `+15°C to +25°C`, Dry FTL).
-   - Outputs estimated distance, transit hours, payload feasibility, and rate bracket.
-   - **One-Click Direct WhatsApp Booking**: Automatically generates a formatted WhatsApp message with all quoted details prefilled to `8955917201`.
+1. **Direct Hotline & Instant Booking**:
+   - Quick one-click booking via hotline call (`tel:8955917201`) or WhatsApp integration across all navigation bars, hero sections, and sticky triggers.
 
-2. **Live Consignment Tracking Simulator (`index.html#tracking`)**:
-   - Interactive modal simulating real-time GPS coordinates, internal chamber temperature, electronic door lock seal status, driver pilot details, and transit milestones.
-   - Supports demo tracking IDs (`SRB-9842-DL`, `SRB-4412-HR`, `SRB-1190-MH`) or any user-entered LR number.
-
-3. **Interactive Temperature Zone Matrix**:
+2. **Interactive Temperature Zone Matrix**:
    - Switchable micro-climate gauge allowing users to toggle between Deep Freeze, Chilled, and Controlled Ambient zones to inspect equipment specs and cargo compatibility.
 
-4. **Pan-India Arterial Corridors & Transit Matrix**:
+3. **Pan-India Arterial Corridors & Transit Matrix**:
    - Highlights the strategic gateway advantage of **Narnaul, Haryana** on the DMIC, KMP, and Trans-Haryana (NH-152D) Expressways.
    - Transit time tables to all major industrial belts.
 
-5. **Direct Enterprise Booking & Quotation Forms**:
+4. **Direct Enterprise Booking & Quotation Forms**:
    - Built-in lead capture for manufacturers, dairy brands, pharma companies, and FMCG distributors.
    - Direct click-to-call and floating WhatsApp buttons.
 
@@ -63,7 +55,7 @@ This website is custom-engineered for **SRB Logistic** as an enterprise-grade, h
 
 ## 📂 Page Directory
 
-- [index.html](file:///Users/sumitsaini/Downloads/logistic-website/index.html) — Flagship homepage with interactive hero banner, rate calculator, tracking simulator, stats, and services.
+- [index.html](file:///Users/sumitsaini/Downloads/logistic-website/index.html) — Flagship homepage with interactive hero banner, stats, client logo marquee, services, temperature zone matrix, and direct booking actions.
 - [about.html](file:///Users/sumitsaini/Downloads/logistic-website/about.html) — Company profile, Narnaul location advantage, mission, vision, and core values.
 - [services.html](file:///Users/sumitsaini/Downloads/logistic-website/services.html) — Detailed specifications for Reefer Transport, Cold Storage Warehousing, Pharma Logistic, and Dry FTL.
 - [fleet.html](file:///Users/sumitsaini/Downloads/logistic-website/fleet.html) — Fleet technical lineup, Carrier/ThermoKing chilling units, and IoT sensor architecture.
