@@ -60,7 +60,7 @@ This website is custom-engineered for **SRB Logistic** as an enterprise-grade, h
 - [services.html](file:///Users/sumitsaini/Downloads/logistic-website/services.html) — Detailed specifications for Reefer Transport, Cold Storage Warehousing, Pharma Logistic, and Dry FTL.
 - [fleet.html](file:///Users/sumitsaini/Downloads/logistic-website/fleet.html) — Fleet technical lineup, Carrier/ThermoKing chilling units, and IoT sensor architecture.
 - [network.html](file:///Users/sumitsaini/Downloads/logistic-website/network.html) — Pan-India route corridors, transit times, and highway access.
-- [contact.html](file:///Users/sumitsaini/Downloads/logistic-website/contact.html) — Operational HQ in Narnaul, direct hotline (+91 89559 17201), Google Maps embed, and FAQ.
+- [contact.html](file:///Users/sumitsaini/Downloads/logistic-website/contact.html) — Operational HQ in Narnaul, direct hotline (+91 89559 17201), support email (info@srblogistic.in), Google Maps embed, and FAQ.
 
 ---
 
